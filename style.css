@@ -21,6 +21,11 @@
     padding: 30px 3%;
 }
 
+#header-logo{
+    width: 97px;
+    height: 45px;
+}
+
 
 
 .nav-links {
@@ -68,4 +73,11 @@
     font-size: 1rem;
     font-weight: bold;
     font-family: "Raleway", "Sans serif";
+}
+
+button.header-form-submit {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 0px 50px 50px 0px;
 }
