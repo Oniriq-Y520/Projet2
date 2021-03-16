@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'raleway';
+}
 
 .li, a {
     text-decoration: none;
@@ -20,6 +23,7 @@
     align-items: center;
     padding: 30px 3%;
 }
+
 
 #header-logo{
     width: 97px;
@@ -63,8 +67,7 @@
 }
 
 .header-form-search {
-    border-right: none;
-    border-left: none;
+    border: none;
     border-top: #F2F2F2 1px solid;
     border-bottom: #F2F2F2 1px solid;
     padding: 0 1.5rem;
@@ -72,12 +75,132 @@
     width: 14rem;
     font-size: 1rem;
     font-weight: bold;
-    font-family: "Raleway", "Sans serif";
+    
 }
 
 button.header-form-submit {
     padding: 10px;
-    background-color: blue;
+    background-color: #0065FC;
     color: white;
-    border-radius: 0px 50px 50px 0px;
+    border: #F2F2F2 1px solid;
+    border-radius: 0px 15px 15px 0px;
 }
+
+/* section filtre*/
+
+.header-filters{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.header-filters-title{
+    margin: 0 2rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-filters-filter {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 32px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-filters-filter-icon{
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+}
+
+.header-filters-filter-title{
+    margin: 0 10px 0 10px;
+}
+
+.blue-icon{
+    color: #0065FC;
+}
+
+
+
+.hosting-mainCard-stars{
+    color: #0065FC;
+
+}
+
+/*.blue-star{
+    color: #0065FC;
+}
+*/
+.grey-star{
+    color: #f2f2f2;
+}
+
+/* section hébergement*/
+
+.hosting-title{
+    height: 30px;
+    width: 100%;
+    display: block;
+    grid-column: 1;
+}
+
+.hosting-mainCard-figure-img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.hosting-block{
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    width: 60%;
+    margin-right: 5%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.hosting-popular{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hosting-mainCard{
+    padding: 5px;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    background-color: white;
+    width: 30%;
+    
+}
+
+ .hosting-mainCard-figcaption-tiltle .hosting-mainCard-price {
+    color: black;
+}
+
+   /* secttion populaire*/
+
+.hosting-popular-block-imgImg{
+    width: 100%;
+    border-radius: 15px;
+}  
