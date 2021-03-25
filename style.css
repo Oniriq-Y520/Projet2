@@ -9,7 +9,7 @@ body{
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .li, a {
@@ -18,15 +18,15 @@ h2 {
     /*color: #0065FC;*/
 }
 
-.nav-links, .header-nav-menu {
+/*.nav-links, .header-nav-menu {
     color: #0065FC;
-}
+}*/
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 3%;
+    padding: 10px 30px;
 }
 
 
@@ -35,12 +35,17 @@ h2 {
     height: 45px;
 }
 
-
+.nav-menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 .nav-links {
     list-style: none;
     transition-duration: 0.1s;
     border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
 }
 
 
@@ -49,7 +54,16 @@ h2 {
     padding: 0px 20px;
 }
 
+.nav-links li a{
+    padding: 15px;
+}
+
 .nav-links li a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+.header-menu-signup {
     color: #0065FC;
 }
 
@@ -79,6 +93,7 @@ h2 {
     padding: 1rem 1.25rem;
     border-radius: 1rem 0 0 1rem;
     text-align: center;
+    cursor: pointer;
 }
 
 .header-form-search {
@@ -93,13 +108,15 @@ h2 {
     
 }
 
-button.header-form-submit {
+.header-form-submit {
     padding: 10px;
     background-color: #0065FC;
     color: white;
     border: #F2F2F2 1px solid;
     border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
 }
+
 
 /* section filtre*/
 
@@ -124,6 +141,11 @@ button.header-form-submit {
     margin-bottom: 16px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.header-filters-filter:hover{
+    background-color: #f3f8ff;
+    transform: scale(1.018);
 }
 
 .header-filters-filter-icon{
@@ -180,7 +202,8 @@ button.header-form-submit {
     justify-content: center;
     margin-right: 1rem;
 }
-
+/* responsive header*/
+/* responsive header*/
 
 /* section hébergement*/
 
@@ -198,7 +221,7 @@ button.header-form-submit {
 .hosting-mainCard-figure-img{
     height: 7rem;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
@@ -239,6 +262,9 @@ button.header-form-submit {
     
 }
 
+.hosting-mainCard:hover{
+    transform: scale(1.018);
+}
  .hosting-mainCard-figcaption-tiltle .hosting-mainCard-price {
     color: black;
 }
@@ -261,6 +287,10 @@ button.header-form-submit {
     height: 28%;
 }
 
+.hosting-mainCard-pop :hover{
+    transform: scale(1.018);
+}
+
 
 
 .hosting-popular-block-img{
@@ -271,7 +301,7 @@ button.header-form-submit {
     object-fit: cover;
     height: 7rem;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
 }  
 
 .hosting-mainCard-block{
@@ -281,6 +311,9 @@ button.header-form-submit {
 }
 
 .hosting-popular-block-text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     min-width: 50%;
     margin-left: 0.7rem;
 }
@@ -297,10 +330,19 @@ button.header-form-submit {
 
 /*responsive section hebergement et populaire*/
 @media screen and (max-width: 900px){
+/* responsive header*/
+    .header-filters-title{
+        width: 100%;
+    }
+/* responsive header*/
+
     .main-block{
         flex-direction: column-reverse;
-        align-items:center;
+        justify-content: center;
 
+    }
+    .fa-chart-line{
+        padding-left: 23%;
     }
     .hosting-popular {
         padding: 10px;
@@ -309,6 +351,14 @@ button.header-form-submit {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+    .hosting-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .hosting-mainCard{
+        width: 100%;
     }
 }
 /*responsive section hebergement et populaire**/
@@ -353,6 +403,9 @@ button.header-form-submit {
     flex-direction: column;
     margin: 2%;
 }
+.activity-card :hover, .activity-card-duo :hover{
+    transform: scale(1.018);
+}
 
 .activity-card1{
     height: 100%;
@@ -374,7 +427,13 @@ button.header-form-submit {
     padding: 15px;
 }
 
-
+@media screen and (max-width: 899px){
+    .activity{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /*   Footer  */
 
