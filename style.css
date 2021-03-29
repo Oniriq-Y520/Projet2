@@ -52,10 +52,14 @@ h2 {
 .nav-links li {
     display: inline-block;
     padding: 0px 20px;
+    
 }
 
 .nav-links li a{
     padding: 15px;
+}
+.header-nav-menu1{
+
 }
 
 .nav-links li a:hover {
@@ -117,6 +121,9 @@ h2 {
     cursor: pointer;
 }
 
+.header-form-submit i {
+    display: none;
+}
 
 /* section filtre*/
 
@@ -262,6 +269,11 @@ h2 {
     
 }
 
+.hosting-mainCard-viewMore{
+    width: 100%;
+    font-weight: bold;
+}
+
 .hosting-mainCard:hover{
     transform: scale(1.018);
 }
@@ -331,8 +343,54 @@ h2 {
 /*responsive section hebergement et populaire*/
 @media screen and (max-width: 900px){
 /* responsive header*/
+    .header{
+        height: 160px;
+    }
+    #header-logo{
+        position: relative;
+        top: -50px;
+    }
+    .header-menu-signup{
+        position: relative;
+        top: -50px;
+        left: -100px;
+    }
+    .nav-links{
+        display: flex;
+        left: -20%;
+        position: relative;
+        border-bottom: 3px transparent solid;
+        border-top: none;
+    }
+    .nav-links li a:hover {
+        border-bottom: 3px solid #0065FC;
+        border-width: 100%;
+        border-top: none;
+        color: #0065FC;
+    }
+    .nav-links li a{
+        padding: 0;
+    }
+    .header-form-submit i {
+        display: inline;
+
+    }
+
+    .header-form-submit span {
+        display: none;
+    }
+
     .header-filters-title{
         width: 100%;
+    }
+    .hosting-popular{
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #F2F2F2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
     }
 /* responsive header*/
 
@@ -432,6 +490,23 @@ h2 {
         height: 100%;
         display: flex;
         flex-direction: column;
+    }
+    .activity-card-duo{
+        margin: 0;
+    }
+    .activity-card1-c{
+        height: 300px;
+        margin: 2%;
+    }
+    .activity-card1-c1 {
+        margin-bottom: 3%;
+    }
+    .footer-column{
+        background-color: #F2F2F2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
