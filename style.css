@@ -58,9 +58,6 @@ h2 {
 .nav-links li a{
     padding: 15px;
 }
-.header-nav-menu1{
-
-}
 
 .nav-links li a:hover {
     border-top: 3px solid #0065FC;
@@ -344,29 +341,39 @@ h2 {
 @media screen and (max-width: 900px){
 /* responsive header*/
     .header{
+        display: block;
         height: 160px;
+        padding: 10px 0px;
     }
     #header-logo{
-        position: relative;
-        top: -50px;
+        margin-left: 20px;
     }
     .header-menu-signup{
         position: relative;
-        top: -50px;
-        left: -100px;
+        top: -80px;
+        left: 80%;
     }
     .nav-links{
+        width: 100%;
         display: flex;
-        left: -20%;
-        position: relative;
-        border-bottom: 3px transparent solid;
-        border-top: none;
+        justify-content: space-between;
+        border: none;
     }
-    .nav-links li a:hover {
+    .nav-links li:hover {
         border-bottom: 3px solid #0065FC;
         border-width: 100%;
-        border-top: none;
         color: #0065FC;
+    }
+    .nav-links li a:hover{
+        border-top: none;
+    }
+    .nav-links li{
+        
+        width: 50%;
+        display: block;
+        padding: 10px 0px;
+        border-bottom: 3px solid #f2f2f2;
+        text-align: center;
     }
     .nav-links li a{
         padding: 0;
