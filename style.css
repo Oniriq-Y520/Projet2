@@ -40,18 +40,23 @@ h2 {
     display: flex;
     justify-content: flex-end;
 }
+.nav-block {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 
 .nav-links {
     list-style: none;
     transition-duration: 0.1s;
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
+    margin-right: 20px;
 }
 
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 20px;
     
 }
 
@@ -282,11 +287,10 @@ h2 {
 
 .hosting-popular-title{
     margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.fa-chart-line{
-    padding-left: 30%;
-}
 .hosting-mainCard-pop{
     padding: 5px;
     margin-bottom: 5%;
@@ -339,6 +343,7 @@ h2 {
 
 /*responsive section hebergement et populaire*/
 @media screen and (max-width: 900px){
+
 /* responsive header*/
     .header{
         display: block;
@@ -348,16 +353,23 @@ h2 {
     #header-logo{
         margin-left: 20px;
     }
-    .header-menu-signup{
-        position: relative;
-        top: -80px;
-        left: 80%;
+    .nav-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .nav-menu {
+        order: 2;
+    }
+    .header-menu-signup {
+        order: 1;
+        padding: 0 10px 0 0;
     }
     .nav-links{
         width: 100%;
         display: flex;
-        justify-content: space-between;
         border: none;
+        margin: 20px 0 0 0;
     }
     .nav-links li:hover {
         border-bottom: 3px solid #0065FC;
@@ -375,9 +387,7 @@ h2 {
         border-bottom: 3px solid #f2f2f2;
         text-align: center;
     }
-    .nav-links li a{
-        padding: 0;
-    }
+
     .header-form-submit i {
         display: inline;
 
@@ -442,9 +452,10 @@ h2 {
 
 
 .activity {
-    height: 700px;
+    height: 600px;
     display: flex;
     flex-direction: row;
+    margin: 2%;
 }
 
 .activity-card-img{
@@ -459,14 +470,21 @@ h2 {
 .activity-card{
     display: flex;
     flex-direction: column;
-    margin: 2%;
-
+    width: 100%;
+    margin: 1%;
+}
+.activity-duo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1%;
 }
 .activity-card-duo{
     justify-content: space-between;
     display: flex;
     flex-direction: column;
     margin: 2%;
+    height: 50%;
 }
 .activity-card :hover, .activity-card-duo :hover{
     transform: scale(1.018);
@@ -481,7 +499,7 @@ h2 {
 }
 
 .activity-card1-c{
-    height: 47%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 20px #0000002e;
